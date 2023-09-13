@@ -14,13 +14,13 @@ body {
 }
 
 .column {
-  width: 100%; /* Cards take full width */
-  margin: 0; /* Remove margin to eliminate extra spacing */
+  width: 100%; 
+  margin: 0; 
 }
 
 .card {
   width: 100%;
-  height: auto; /* Allow cards to adjust in height */
+  height: auto;
   padding: 2em 1.5em;
   background-size: 100% 200%;
   background-position: 0 2.5%;
@@ -39,13 +39,13 @@ body {
   width: 100%;
   height: 100%;
   background-size: cover;
-  filter: brightness(0.5); /* Default brightness */
+  filter: brightness(0.5); 
   z-index: -1;
-  transition: filter 0.5s; /* Transition for brightness change */
+  transition: filter 0.5s; 
 }
 
 .card:hover .background-image {
-  filter: brightness(0.8); /* Brighten the image on hover */
+  filter: brightness(0.8); 
 }
 
 .card-content {
@@ -84,21 +84,19 @@ h3 {
 
 
 .services-content {
-  padding-top: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Add this line */
+  justify-content: center;
   width: 100%;
-  height: 100vh; /* Add this line to make the section take the full viewport height */
 }
 
 .services {
   display: flex;
-  justify-content: center; /* Add this line to center the cards horizontally */
+  justify-content: center; 
 }
 
 a {
-  text-decoration: none; /* Remove underline from all anchor links */
+  text-decoration: none; 
 }
 

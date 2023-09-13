@@ -160,46 +160,58 @@
   ],
   "places_cities": [
     {
-      "city": "Lipa",
+      "id": 1,
+      "image": "http://localhost:3001/images/4db8ece5fee776db93351332e2a89dfd",
+      "existingImage": "[object",
+      "title": "Lipa",
       "description": "Great Place",
-      "image": "http://localhost:3001/images/df2d3d64a2014d48c51c6d76d0f606ad",
       "created_at": "31-08-2023",
-      "id": 1
+      "updated_at": "14-09-2023"
     },
     {
-      "city": "Agoncillo",
+      "id": 2,
+      "image": "http://localhost:3001/images/4c32e587f126311786969bc2e17f1b9e",
+      "existingImage": "[object",
+      "title": "Agoncillo",
       "description": "Great Place",
-      "image": "http://localhost:3001/images/3b6713377ec4eebe27ded0af292eddd2",
       "created_at": "31-08-2023",
-      "id": 2
+      "updated_at": "14-09-2023"
     },
     {
-      "city": "Taysan",
+      "id": 3,
+      "image": "http://localhost:3001/images/53af0e98ab10fb0292329c0fce5e6f16",
+      "existingImage": "[object",
+      "title": "Taysan",
       "description": "Great Place",
-      "image": "http://localhost:3001/images/df2d3d64a2014d48c51c6d76d0f606ad",
       "created_at": "31-08-2023",
-      "id": 3
+      "updated_at": "14-09-2023"
     },
     {
-      "city": "San Jose",
+      "id": 6,
+      "image": "http://localhost:3001/images/10c403797fbb953da630b93f37a4ac1e",
+      "existingImage": "[object",
+      "title": "San Jose",
       "description": "Great Place",
-      "image": "http://localhost:3001/images/4803b76c37142c3593054c4ca61df838",
       "created_at": "31-08-2023",
-      "id": 6
+      "updated_at": "14-09-2023"
     },
     {
-      "city": "Cuence",
+      "id": 7,
+      "image": "http://localhost:3001/images/b27f7808b8976ee577b0f6cc81428cc2",
+      "existingImage": "[object",
+      "title": "Kalatagan",
       "description": "Great Place",
-      "image": "http://localhost:3001/images/8c58ca101f60b37c0d1914523211cdfd",
       "created_at": "31-08-2023",
-      "id": 7
+      "updated_at": "14-09-2023"
     },
     {
-      "city": "Kalatagan",
+      "id": 8,
+      "image": "http://localhost:3001/images/38e6a4701b3ad8982555c1296d59b16d",
+      "existingImage": "http://localhost:3001/images/undefined",
+      "title": "Batangas",
       "description": "Great Place",
-      "image": "http://localhost:3001/images/cec984296e198f51333d360a22810f5b",
-      "created_at": "31-08-2023",
-      "id": 7
+      "created_at": "14-09-2023",
+      "updated_at": "14-09-2023"
     }
   ],
   "festival": [

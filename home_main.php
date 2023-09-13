@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include 'header.php'; ?>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Services Section</title>
-    <!-- Font Awesome CDN-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/home_main.css" />
-  </head>
-  <body>
-    <div class="iframe-container">
-      <iframe src="home_slider.html" width="100%" height="775" frameborder="0" background="transparent"></iframe>
-    </div>
 
-    <section>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Services Section</title>
+  <!-- Font Awesome CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/home_main.css" />
+</head>
+
+<body>
+  <div class="iframe-container">
+    <iframe src="home_slider.html" width="100%" height="775" frameborder="0" background="transparent"></iframe>
+  </div>
+
+  <!-- <section>
     <section>
       <div class="row">
         <div class="row">
@@ -86,25 +83,26 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="video">
-      <div class="hero">
-          <div class="content">
-              <h1> GO EXPLORE </h1>
-              <p>Welcome to Batangas, where beautiful smiles are seen everywhere.
-                  With the beautiful places <br> and cultures, you'll be blown away! <br>
-                  Tara sinsay na!
-                  <br><br>
-              </p>
-  
-              <div class="video-container">
-                <video loop class="video-element" id="video" controls>
-                    <source src="image/places/video.mp4" type="video/mp4">
-                </video>
-            </div>
-          </div>
+  <section class="video">
+    <div class="hero">
+      <div class="content">
+        <h1> GO EXPLORE </h1>
+        <br>
+        <p class="dynamic-paragraph">Welcome to Batangas, where beautiful smiles are seen everywhere.
+          With the beautiful places <br> and cultures, you'll be blown away! <br>
+          Tara sinsay na!
+          <br><br>
+        </p>
+
+        <div class="video-container">
+          <video loop class="video-element" id="video" controls>
+            <source src="image/places/video.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
+    </div>
   </section>
 
   <div class="iframe">
@@ -114,11 +112,8 @@
     <iframe sandbox="allow-top-navigation" src="home_most_viewed.html" width="100%" height="585" frameborder="0" background="transparent"></iframe>
   </div>
 
-  <script  src="js/home_main.js"></script>
+  <script src="js/home_main.js"></script>
   <?php include 'footer.php'; ?>
-  </body>
-
-    
-
+</body>
 
 </html>
