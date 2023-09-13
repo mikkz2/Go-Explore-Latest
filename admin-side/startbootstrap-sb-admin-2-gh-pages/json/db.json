@@ -158,6 +158,50 @@
       "updated_at": "12-09-2023"
     }
   ],
+  "places_cities": [
+    {
+      "city": "Lipa",
+      "description": "Great Place",
+      "image": "http://localhost:3001/images/df2d3d64a2014d48c51c6d76d0f606ad",
+      "created_at": "31-08-2023",
+      "id": 1
+    },
+    {
+      "city": "Agoncillo",
+      "description": "Great Place",
+      "image": "http://localhost:3001/images/3b6713377ec4eebe27ded0af292eddd2",
+      "created_at": "31-08-2023",
+      "id": 2
+    },
+    {
+      "city": "Taysan",
+      "description": "Great Place",
+      "image": "http://localhost:3001/images/df2d3d64a2014d48c51c6d76d0f606ad",
+      "created_at": "31-08-2023",
+      "id": 3
+    },
+    {
+      "city": "San Jose",
+      "description": "Great Place",
+      "image": "http://localhost:3001/images/4803b76c37142c3593054c4ca61df838",
+      "created_at": "31-08-2023",
+      "id": 6
+    },
+    {
+      "city": "Cuence",
+      "description": "Great Place",
+      "image": "http://localhost:3001/images/8c58ca101f60b37c0d1914523211cdfd",
+      "created_at": "31-08-2023",
+      "id": 7
+    },
+    {
+      "city": "Kalatagan",
+      "description": "Great Place",
+      "image": "http://localhost:3001/images/cec984296e198f51333d360a22810f5b",
+      "created_at": "31-08-2023",
+      "id": 7
+    }
+  ],
   "festival": [
     {
       "id": 1,

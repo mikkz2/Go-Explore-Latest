@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Responsive Services Section</title>
@@ -12,21 +13,25 @@
   <script src="https://kit.fontawesome.com/e173e574d6.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+  <link href="css/footer.css" rel="stylesheet">
+
 </head>
 
 <header>
 
-<?php include 'header.php'; ?>
+  <?php include 'header.php'; ?>
 </header>
+
 <body>
 
-    <div class="services-content" id="services-content">
-      <div class="row">
-        <!-- The dynamic service cards will be inserted here -->
-      </div>
+  <div class="services-content" id="services-content">
+    <div class="row">
+      <!-- The dynamic service cards will be inserted here -->
     </div>
+  </div>
 
- 
-    <script src="js/wheretogo_main.js"></script>
+
+  <script src="js/wheretogo_main.js"></script>
 </body>
+
 </html>

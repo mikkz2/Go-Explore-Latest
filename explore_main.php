@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="css/explore_main.css" />
   <script src="https://kit.fontawesome.com/e173e574d6.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <link href="css/footer.css" rel="stylesheet">
 </head>
 <body>
 
@@ -30,16 +32,14 @@
         <div class="header">
           <h1>EXPLORE INTERESTS</h1>
         </div>
-        <li><a href="#" class="category-link swim-beaches" data-category="SWIM AND BEACHES"><i class="fa-solid fa-water"></i><p>Swim and Beaches</p></a></li>
-        <li><a href="#" class="category-link nature-trip" data-category="NATURE TRIP"><i class="fa-solid fa-leaf"></i><p>Nature Trip</p></a></li>
-        <li><a href="#" class="category-link tourist-spots" data-category="TOURIST SPOT"><i class="fa-solid fa-location-dot"></i><p>Tourist Spots</p></a></li>
-        <li><a href="#" class="category-link hotel" data-category="HOTEL"><i class="fa-solid fa-hotel"></i><p>Hotel</p></a></li>
-        <li><a href="#" class="category-link churches" data-category="CHURCHES"><i class="fa-solid fa-church"></i><p>Churches</p></a></li>
-        <li><a href="#" class="category-link events-culture" data-category="EVENTS AND CULTURE"><i class="fa-solid fa-calendar-days"></i><p>Events and Culture</p></a></li>
+        <li><a href="#" class="category-link swim-beaches" data-category="swim"><i class="fa-solid fa-water"></i><p>Swim and Beaches</p></a></li>
+        <li><a href="#" class="category-link nature-trip" data-category="nature"><i class="fa-solid fa-leaf"></i><p>Nature Trip</p></a></li>
+        <li><a href="#" class="category-link tourist-spots" data-category="tourist"><i class="fa-solid fa-location-dot"></i><p>Tourist Spots</p></a></li>
+        <li><a href="#" class="category-link hotel" data-category="hotels"><i class="fa-solid fa-hotel"></i><p>Hotel</p></a></li>
+        <li><a href="#" class="category-link churches" data-category="churches"><i class="fa-solid fa-church"></i><p>Churches</p></a></li>
+        <li><a href="#" class="category-link events-culture" data-category="events"><i class="fa-solid fa-calendar-days"></i><p>Events and Culture</p></a></li>
         <li><a href="#" class="category-link see-all"><i class="fa-solid fa-eye"></i><p>See All</p></a></li>
       </ul>
-      
-      
         
     </div>
     <div class="services-content" id="services-content">
@@ -52,11 +52,10 @@
         <button id="load-more-btn" class="load-btn">Load More</button>
       </div>
     </div>
-    
       
   </section>
+
   
-  <?php include 'footer.php'; ?>
   <script src="js/explore_main.js"></script>
 </body>
 

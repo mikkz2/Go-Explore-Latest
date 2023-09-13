@@ -53,7 +53,7 @@
             <div class="modal-content">
                 <span class="close-modal">&times;</span>
                 <h2>Contact Information</h2>
-                <p id="contactInfo">Contact information will be displayed here</p>
+                <p id="contactInfo"></p>
                 <button id="copyButton">
                     <i class="fas fa-copy"></i> Copy
                 </button>
@@ -84,4 +84,8 @@
       
 <script src="js/explore_cardcontent.js"></script>
 </body>
+<footer>
+
+<?php include 'footer.php'; ?>
+</footer>
 </html>

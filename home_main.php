@@ -27,7 +27,7 @@
       <div class="row">
         <div class="row">
           <div class="card">
-            <a href="video.html">
+            <a href="explore_main.php?category=swim">
             <div class="icon-wrapper">
               <i class="fa-solid fa-water"></i>
             </div>
@@ -37,7 +37,7 @@
         </div>
         <div class="row">
           <div class="card2">
-            <a href="video.html">
+            <a href="explore_main.php?category=nature-trip">
             <div class="icon-wrapper2">
               <i class="fa-solid fa-leaf"></i>
             </div>
@@ -47,7 +47,7 @@
         </div>
         <div class="row">
           <div class="card3">
-            <a href="video.html">
+            <a href="explore_main.php?category=tourist-spots">
             <div class="icon-wrapper3">
               <i class="fa-solid fa-location-dot"></i>
             </div>
@@ -57,7 +57,7 @@
         </div>
         <div class="row">
           <div class="card4">
-            <a href="video.html">
+            <a href="explore_main.php?category=hotels">
             <div class="icon-wrapper4">
               <i class="fa-solid fa-hotel"></i>
             </div>
@@ -67,7 +67,7 @@
         </div>
         <div class="row">
           <div class="card5">
-            <a href="video.html">
+            <a href="explore_main.php?category=churches">
             <div class="icon-wrapper5">
               <i class="fa-solid fa-church"></i>
             </div>
@@ -77,7 +77,7 @@
         </div>
         <div class="row">
           <div class="card6">
-            <a href="video.html">
+            <a href="explore_main.php?category=events-culture">
             <div class="icon-wrapper6">
               <i class="fa-solid fa-calendar-days"></i>
             </div>
@@ -108,12 +108,17 @@
   </section>
 
   <div class="iframe">
-    <iframe src="home_carousel.html" width="100%" height="585" frameborder="0" background="transparent"></iframe>
+    <iframe src="home_most_rated.html" width="100%" height="585" frameborder="0" background="transparent"></iframe>
   </div>
   <div class="iframe">
-    <iframe src="home_carousel.html" width="100%" height="585" frameborder="0" background="transparent"></iframe>
+    <iframe sandbox="allow-top-navigation" src="home_most_viewed.html" width="100%" height="585" frameborder="0" background="transparent"></iframe>
   </div>
 
   <script  src="js/home_main.js"></script>
+  <?php include 'footer.php'; ?>
   </body>
+
+    
+
+
 </html>
