@@ -28,7 +28,7 @@
                           <td>${user.id}</td>
                           <td><img src=${user.image} alt=""
                           class="img-thumbnail" width="100px"></td>
-                          <td>${user.title}</td>
+                          <td>${user.city}</td>
                           <td>${user.description}</td>
                           <td>${user.created_at}</td>
                           <td>${user.updated_at}</td>
@@ -77,7 +77,7 @@
           let updated_at = `${currentDay}-${currentMonth}-${currentYear}`;
   
           editForm.elements.id.value = user.id;
-          editForm.elements.title.value = user.title;
+          editForm.elements.city.value = user.city;
           editForm.elements.description.value = user.description;
           editForm.elements.created_at.value = user.created_at;
           editForm.elements.updated_at.value = updated_at;

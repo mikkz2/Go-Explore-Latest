@@ -14,6 +14,12 @@ const iconMappings = {
 function generateServiceCard(service) {
   const iconClass = iconMappings[service.category] || 'fas fa-question';
 
+  const words = service.description.split(" ");
+      console.log("working");
+      const truncatedDescription = words.length > 15 ? 
+                                   words.slice(0, 15).join(" ") + "..." : 
+                                   service.description;
+
   return `
     <div class="column">
       <a href="explore_cardcontent.php?id=${service.id}" class="card-link">
@@ -24,13 +30,14 @@ function generateServiceCard(service) {
           </div>
           <div class="card-content">
             <h3>${service.title}</h3>
-            <p>${service.description}</p>
+            <p>${truncatedDescription}</p>
           </div>
         </div>
       </a>
     </div>
   `;
 }
+
 
 
 function fetchServicesData() {

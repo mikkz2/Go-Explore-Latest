@@ -29,7 +29,13 @@ const queryParams = new URLSearchParams(window.location.search);
 const id = parseInt(queryParams.get('id'));
 
 // Fetch dynamic data and update elements with the selected data
+// Fetch dynamic data and update elements with the selected data
 fetchDynamicData().then(function(dynamicData) {
+    // ... existing code
   const selectedData = dynamicData.find(item => item.id === id);
   updateDynamicElements(selectedData);
+
+  // Store the selected city in local storage
+  localStorage.setItem('selectedCity', selectedData.city);
+
 });
