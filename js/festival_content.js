@@ -6,8 +6,8 @@ const festivalTitle = document.querySelector('.festival-title');
 const festivalDescription = document.querySelector('.festival-description');
 
 function populateElements(data) {
-    bgImage.style.backgroundImage = `url('${data.image}')`; 
-    overlayTitle.textContent = data.title; 
+    bgImage.style.backgroundImage = `url('${data.image}')`;
+    overlayTitle.textContent = data.title;
     festivalTitle.textContent = data.title;
     festivalDescription.textContent = data.description;
 }
@@ -22,7 +22,6 @@ fetch(`http://localhost:3000/festival/${itemId}`)
         populateElements(data);
     })
     .catch(error => console.error('Error fetching data:', error));
-
 
 
 // Find the element where you want to insert the content
