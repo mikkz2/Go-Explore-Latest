@@ -163,7 +163,7 @@
       "id": 1,
       "image": "http://localhost:3001/images/4db8ece5fee776db93351332e2a89dfd",
       "existingImage": "[object",
-      "title": "Lipa",
+      "city": "Lipa",
       "description": "Great Place",
       "created_at": "31-08-2023",
       "updated_at": "14-09-2023"
@@ -172,7 +172,7 @@
       "id": 2,
       "image": "http://localhost:3001/images/4c32e587f126311786969bc2e17f1b9e",
       "existingImage": "[object",
-      "title": "Agoncillo",
+      "city": "Agoncillo",
       "description": "Great Place",
       "created_at": "31-08-2023",
       "updated_at": "14-09-2023"
@@ -181,7 +181,7 @@
       "id": 3,
       "image": "http://localhost:3001/images/53af0e98ab10fb0292329c0fce5e6f16",
       "existingImage": "[object",
-      "title": "Taysan",
+      "city": "Taysan",
       "description": "Great Place",
       "created_at": "31-08-2023",
       "updated_at": "14-09-2023"
@@ -190,7 +190,7 @@
       "id": 6,
       "image": "http://localhost:3001/images/10c403797fbb953da630b93f37a4ac1e",
       "existingImage": "[object",
-      "title": "San Jose",
+      "city": "San Jose",
       "description": "Great Place",
       "created_at": "31-08-2023",
       "updated_at": "14-09-2023"
@@ -199,7 +199,7 @@
       "id": 7,
       "image": "http://localhost:3001/images/b27f7808b8976ee577b0f6cc81428cc2",
       "existingImage": "[object",
-      "title": "Kalatagan",
+      "city": "Kalatagan",
       "description": "Great Place",
       "created_at": "31-08-2023",
       "updated_at": "14-09-2023"
@@ -208,7 +208,7 @@
       "id": 8,
       "image": "http://localhost:3001/images/38e6a4701b3ad8982555c1296d59b16d",
       "existingImage": "http://localhost:3001/images/undefined",
-      "title": "Batangas",
+      "city": "Batangas",
       "description": "Great Place",
       "created_at": "14-09-2023",
       "updated_at": "14-09-2023"

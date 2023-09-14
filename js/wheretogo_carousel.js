@@ -23,13 +23,20 @@ async function fetchAndGenerateCards(url, isFestival = false) {
       const cardElement = document.createElement("li");
       cardElement.className = "card";
       cardElement.style.backgroundImage = `url('${card.image}')`;
+      cardElement.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
 
-      const iconClass = categoryToIcon[card.category];
+      const words = card.description.split(" ");
+      console.log("working");
+      const truncatedDescription = words.length > 10 ? 
+                                   words.slice(0, 10).join(" ") + "..." : 
+                                   card.description;
+
+      const iconClass = isFestival ? 'fas fa-calendar-days' : categoryToIcon[card.category];
 
       cardElement.innerHTML = `
         <div class="icon card-icon ${iconClass}"></div>
-        <h2>${card.city}</h2>
-        <span>${card.description}</span>
+        <h2>${card.title}</h2>
+        <span>${truncatedDescription}</span>
       `;
 
       cardElement.dataset.redirectUrl = `explore_cardcontent.php?id=${card.id}`;
@@ -40,7 +47,7 @@ async function fetchAndGenerateCards(url, isFestival = false) {
         if (redirectUrl) {
           window.top.location.href = redirectUrl;
         }
-      });        
+      });
 
       carousel.appendChild(cardElement);
     });
@@ -106,19 +113,57 @@ async function fetchAndGenerateCards(url, isFestival = false) {
   }
 }
 
-async function fetchAndGenerateAllCards() {
+// Function to fetch and generate cards dynamically for a specific city
+async function fetchAndGenerateCardsForCity(city) {
   try {
-    const city = await fetchCityData();
     const festivalUrl = `http://localhost:3000/festival?city=${city}`;
     const placesUrl = `http://localhost:3000/places?city=${city}`;
 
-    await fetchAndGenerateCards(festivalUrl, true);
-    await fetchAndGenerateCards(placesUrl);
+    await Promise.all([
+      fetchAndGenerateCards(festivalUrl, true),
+      fetchAndGenerateCards(placesUrl)
+    ]);
   } catch (error) {
     console.error('Error fetching city data or cards data:', error);
   }
 }
 
-// Call the function to fetch and generate cards dynamically
-fetchAndGenerateAllCards();
 
+function refreshContent() {
+  // Read the selected city from local storage
+  const selectedCity = localStorage.getItem('selectedCity') || 'DefaultCity';
+  console.log("Selected city from local storage:", selectedCity);  // Debugging line
+  fetchAndGenerateCardsForCity(selectedCity);
+}
+
+// Add an event listener to call refreshContent() when the page loads
+window.addEventListener('load', refreshContent);
+
+// Optionally, listen for changes in local storage
+window.addEventListener('storage', (event) => {
+  if (event.key === 'selectedCity') {
+    refreshContent();
+  }
+});
+
+// Capture user interaction to select a city (You should implement this part)
+
+// For example, assuming you have a button with the class "city-option" that the user clicks
+const cityOptions = document.querySelectorAll('.city-option');
+
+    cityOptions.forEach(option => {
+      option.addEventListener('click', () => {
+        // ... existing code
+    // Read the selected city from local storage
+        const selectedCity = localStorage.getItem('selectedCity') || 'DefaultCity';
+        fetchAndGenerateCardsForCity(selectedCity);
+
+        // Optionally, listen for changes in local storage (if both scripts run on the same page)
+        window.addEventListener('storage', (event) => {
+          if (event.key === 'selectedCity') {
+            fetchAndGenerateCardsForCity(event.newValue);
+          }
+        });
+        refreshContent();
+      });
+    });
